@@ -13,7 +13,7 @@ also use rand.gauss(0, 1) instead of i
 
 import random as rand
 
-N = 2
+N = 200
 
 def average1():
     sum = 0
@@ -30,13 +30,17 @@ def average2():
 
 def average3():
     avg = 0
+    
     for i in range(1, N):
-        avg = i #fix this
+        val = i
+        avg = avg + (val-avg)/i
     print('avg3', avg)
 
+def gauss():
+    print("Gaussian = ", rand.gauss())
 
 if __name__ == '__main__':
     average1()
     average2()
     average3()
-    
+    gauss()
