@@ -37,7 +37,7 @@ def average3():
     print('avg3', avg)
 
 def gauss():
-    print("Gaussian = ", rand.gauss())
+    print("Gaussian = ", rand.gauss(0,1))
 
 if __name__ == '__main__':
     average1()
